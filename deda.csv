@@ -1,0 +1,71 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.1.38-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             10.2.0.5599
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+-- Dumping database structure for randis
+CREATE DATABASE IF NOT EXISTS `randis` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `randis`;
+
+-- Dumping structure for table randis.randis
+CREATE TABLE IF NOT EXISTS `randis` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `no` varchar(50) DEFAULT NULL,
+  `reg_lama` varchar(50) DEFAULT NULL,
+  `reg_baru` varchar(50) DEFAULT NULL,
+  `chasis` varchar(250) DEFAULT NULL,
+  `mesin` varchar(250) DEFAULT NULL,
+  `jenis_type_merek` varchar(250) DEFAULT NULL,
+  `jmlah_cc_kva` varchar(50) DEFAULT NULL,
+  `tahun` varchar(50) DEFAULT NULL,
+  `kondisi` varchar(50) DEFAULT NULL,
+  `bahan_bakar` char(10) DEFAULT NULL,
+  `keterangan` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table randis.randis: ~28 rows (approximately)
+/*!40000 ALTER TABLE `randis` DISABLE KEYS */;
+INSERT INTO `randis` (`id`, `no`, `reg_lama`, `reg_baru`, `chasis`, `mesin`, `jenis_type_merek`, `jmlah_cc_kva`, `tahun`, `kondisi`, `bahan_bakar`, `keterangan`) VALUES
+	(1, '1', '', '3525-09', 'MR053REH2M4000538', '2ZR-Y039039', 'Sedan Toyota Altis', '1.800 CC', '2014', 'B', 'Pertamax', 'Kapusinfolahta'),
+	(2, '2', '', '3527-09', 'NCP150R-CEMGKD', 'INZ-Z236226', 'Sedan Toyota Vios', '1.500 CC', '2015', 'B', 'MT 88', 'Waka'),
+	(3, '3', '3422-00', '3521-09', 'MR053HY9379007149', 'INZ-ZX6753819', 'Sedan Toyota Vios', '1.500 CC', '2007', 'B', 'MT 88', 'kabidinfomin'),
+	(4, '4', '3699-00', '3522-09', 'MR053HY9389007938', 'INZ-X699449', 'Sedan Toyota Vios', '1.500 CC', '2008', 'B', 'MT 88', 'Kabidinfoops'),
+	(5, '5', '3872-00', '3523-09', 'MR053HY9379007302', 'INZ-X676478', 'Sedan Toyota Vios', '1.500 CC', '2007', 'B', 'MT 88', 'Kabidpamsisfo'),
+	(6, '6', '3183-00', '3554-09', 'MHYERB415J503921', 'M15A-ID503491', 'Sedan Suzuki Balone', '1.500 CC', '2003', 'B', 'MT 88', 'Kabidduk TI'),
+	(7, '7', '3076-00', '3524-09', 'MHYESY4152J112905', 'G15C-1D112905', 'Sedan Suzuki Balone', '1.500 CC', '2002', 'B', 'MT 88', 'Kasubidanev'),
+	(8, '8', '6279-00', '5675-09', 'MHFM1BA3J8KO82684', 'K3DC84132', 'Minibus Toyota Avansa', '1.300 CC', '2008', 'B', 'MT 88', 'Kasubbidpamaplikasi'),
+	(9, '9', '6280-00', '5676-09', 'MHFM1BA3J8KO82765', 'K3DC82966', 'Minibus Toyota Avansa', '1.300 CC', '2008', 'B', 'MT 88', 'Kasubidsisfoter'),
+	(10, '10', '6282-00', '5677-09', 'MHFM1BA3J8KO81858', 'K3DC83138', 'Minibus Toyota Avansa', '1.300 CC', '2008', 'B', 'MT 88', 'Kasubidsisfolog'),
+	(11, '11', '6281-00', '5678-09', 'MHFM1BA3J8KO82912', 'K3DC84432', 'Minibus Toyota Avansa', '1.300 CC', '2008', 'B', 'MT 88', 'Kasubidsisfointel'),
+	(12, '12', '6811-00', '5679-09', 'MHFM1BAJK103425', 'DD18542', 'Minibus Toyota Avansa', '1.300 CC', '2008', 'B', 'MT 88', 'Kasubid web'),
+	(13, '13', '', '5680-09', 'MHKV1BA1JDK024604', 'MB62605', 'Minibus Daihatsu Xenia', '1.300 CC', '2013', 'B', 'MT 88', 'Kasubidpamjarkomta'),
+	(14, '14', '', '5681-09', 'MHKM1BA3JDK178953', 'K3MC62452', 'Minibus Toyota Avansa', '1.300 CC', '2014', 'B', 'MT 88', 'Kataud'),
+	(15, '15', '', '5682-09', 'MHKM5EA3JHK063624', '1NR-F268052', 'Minibus Toyota Avansa', '1.300 CC', '2017', 'B', 'MT 88', 'Kasubbid Sisfogarku'),
+	(16, '16', '5209-00', '5913-09', 'MHMVAIWHR4K-004174', '4G18-471285', 'Mitsubishi Kuda', '1.500 CC', '2004', 'B', 'MT 88', 'Kasubbid sisfoops'),
+	(17, '17', '5215-00', '5914-09', 'MHMVAIWHR4K-004196', '4G18-471273', 'Mitsubishi Kuda', '1.500 CC', '2004', 'B', 'MT 88', 'Kasubbid Jarkomta'),
+	(18, '18', '', '5683-09', 'MK2NCWMANJJ000868', '4A91DK7482', 'Mitsubishi Xpander', '1.500 CC', '2018', 'B', 'MT 88', 'Kasubidsisfopers'),
+	(19, '19', '', '5684-09', 'MK2NCWMANJJ000870', '4A91DK7515', 'Mitsubishi Xpander', '1.500 CC', '2018', 'B', 'MT 88', 'Kasubid SDMTI'),
+	(20, '20', '2953-00', '2265-09', 'MHIKC111-88K124315', 'KC11E11-26357', 'Spd Motor/Honda', '160 CC', '2007', 'B', 'MT 88', 'Tamudi Kapus'),
+	(21, '21', '2959-00', '2266-09', 'MHIKC111-58K124255', 'KC11E11-26450', 'Spd Motor/Honda', '160 CC', '2007', 'B', 'MT 88', 'Baurku'),
+	(22, '22', '2960-00', '2267-09', 'MHIKC111-88K126856', 'KC11E11-28902', 'Spd Motor/Honda', '160 CC', '2007', 'B', 'MT 88', 'Caraka'),
+	(23, '23', '2961-00', '2268-09', 'MHIKC111-89K124321', 'KC11E11-26357', 'Spd Motor/Honda', '160 CC', '2007', 'B', 'MT 88', 'Kaurpers'),
+	(24, '24', '', '2272-09', 'KC-3117-DK-310675', 'KC31E13-09482', 'Spd Motor/Honda', '160 CC', '2014', 'B', 'MT 88', 'Kaurdal'),
+	(25, '25', '1138-00', '2269-09', 'MH8NFAABJ104299', 'F4B1-ID103911', 'Spd Motor/Suzuki', '125 CC', '2011', 'B', 'MT 88', 'Kaurtu'),
+	(26, '26', '1897-00', '2270-09', 'KM4SF41A961203233', 'RT125-104572', 'Spd Motor/Hyosung', '150 CC', '2007', 'B', 'MT 88', 'Bautarlat'),
+	(27, '27', '2905-00', '2271-09', 'MH8EN125A9J616413', 'F405-616505', 'Spd Motor/Suzuki', '125 CC', '2009', 'B', 'MT 88', 'Baur Spri Kapus'),
+	(28, '28', '', '7375-09', 'MJERK8JSKEJN 14101', 'JO8EOFJ84101', 'Hino FB 13D Bis Mini Bu STD AC', '4.000 CC', '2015', 'B', 'HSD', 'Kataud');
+/*!40000 ALTER TABLE `randis` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
